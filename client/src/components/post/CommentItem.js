@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -21,7 +21,7 @@ const CommentItem = ({
     <div>
       <p class='my-1'>{text}</p>
       <p class='post-date'>
-        Posted on <Moment format='YYYY/MM/DD'>{date}</Moment>
+        Posted on <Moment format='MM/DD/YYYY'>{date}</Moment>
       </p>
       {!auth.loading && user === auth.user._id && (
         <button

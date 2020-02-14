@@ -22,7 +22,6 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
     e.preventDefault();
     if (password !== password2) {
       setAlert('Passwords do not match', 'danger');
-      console.log('Passwords do not match');
     } else {
       // **-------------------------------------------------**
       // Request example: Without Redux
@@ -44,12 +43,11 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
       //   const body = JSON.stringify(newUser);
 
       //   const res = await axios.post('/api/users', body, config);
-      //   console.log(res.data);
       // } catch (err) {
       //   console.error(err.response.data);
       // }
-      console.log('SUCCESS');
 
+      console.log('SUCCESS');
       // **-------------------------------------------------**
       // Request example: With Redux
       // **-------------------------------------------------**
