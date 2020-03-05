@@ -113,7 +113,7 @@ router.post(
 );
 
 // @route   GET api/profile
-// @desc    get all profiled
+// @desc    get all profiles
 // @access  Public
 router.get('/', async (req, res) => {
   try {
